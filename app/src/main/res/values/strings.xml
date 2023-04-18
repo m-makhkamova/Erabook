@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Erabook</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="countries_array">
+        <item>Uzbekistan</item>
+        <item>USA</item>
+        <item>UK</item>
+        <item>Kazakstan</item>
+        <item>Pakistan</item>
+        <item>Jordan</item>
+        <item>UAA</item>
+        <item>Saudia Arabia</item>
+    </string-array>
+</resources>
