@@ -41,6 +41,9 @@ class Register4Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         var binding = FragmentRegister4Binding.inflate(inflater)
+        binding.backReg4.setOnClickListener {
+            findNavController().navigate(R.id.action_register4Fragment_to_register3Fragment)
+        }
         var cal = Calendar.getInstance()
         val dateSetListener = object : DatePickerDialog.OnDateSetListener {
             override fun onDateSet(view: DatePicker, year: Int, monthOfYear: Int,

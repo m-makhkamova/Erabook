@@ -36,6 +36,9 @@ class Register2Fragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         var binding = FragmentRegister2Binding.inflate(inflater)
+        binding.backReg2.setOnClickListener {
+            findNavController().navigate(R.id.action_register2Fragment_to_registerFragment)
+        }
         binding.age1.setOnClickListener {
             binding.age2.setBackgroundResource(R.drawable.outline)
             binding.age3.setBackgroundResource(R.drawable.outline)

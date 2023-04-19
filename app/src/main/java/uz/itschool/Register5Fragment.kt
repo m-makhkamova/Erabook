@@ -37,8 +37,11 @@ class Register5Fragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var binding = FragmentRegister5Binding.inflate(inflater)
+            var binding = FragmentRegister5Binding.inflate(inflater, container, false)
 
+            binding.backReg5.setOnClickListener {
+                findNavController().navigate(R.id.action_register5Fragment_to_register4Fragment)
+            }
 
             binding.reg5Cont.setOnClickListener {
             var builder = AlertDialog.Builder(requireContext())
@@ -56,6 +59,7 @@ class Register5Fragment : Fragment() {
             }
             handler.postDelayed(runnable, 4000)
         }
+
         return binding.root
     }
 

@@ -7,7 +7,7 @@
     tools:context=".Register4Fragment">
 
     <Button
-        android:id="@+id/back"
+        android:id="@+id/backReg4"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="25dp"

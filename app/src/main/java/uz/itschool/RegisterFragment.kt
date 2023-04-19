@@ -40,6 +40,9 @@ class RegisterFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         var binding = FragmentRegisterBinding.inflate(inflater)
+        binding.backReg.setOnClickListener {
+            findNavController().navigate(R.id.action_registerFragment_to_mainFragment)
+        }
         binding.regCont.setOnClickListener {
             if(binding.male.isChecked || binding.female.isChecked || binding.not.isChecked ){
             findNavController().navigate(R.id.action_registerFragment_to_register2Fragment)

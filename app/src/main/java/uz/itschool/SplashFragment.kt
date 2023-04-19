@@ -40,6 +40,9 @@ class SplashFragment : Fragment() {
         Handler(Looper.getMainLooper()).postDelayed({
             var sharedPref = MySharedPreference()
             if (sharedPref.getStatus()) {
+                findNavController().navigate(R.id.action_splashFragment_to_loginFragment)
+            }else{
+                sharedPref.setStatus(true)
                 findNavController().navigate(R.id.action_splashFragment_to_mainFragment)
             }
         }, 3350)

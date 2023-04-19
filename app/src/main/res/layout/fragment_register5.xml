@@ -7,7 +7,7 @@
     tools:context=".Register4Fragment">
 
     <Button
-        android:id="@+id/back"
+        android:id="@+id/backReg5"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="25dp"
@@ -23,7 +23,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="44dp"
         android:background="@drawable/line"
-        app:layout_constraintStart_toEndOf="@id/back"
+        app:layout_constraintStart_toEndOf="@id/backReg5"
         app:layout_constraintTop_toTopOf="parent" />
     <View
         android:id="@+id/view"
@@ -32,7 +32,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="44dp"
         android:background="@drawable/reg_button"
-        app:layout_constraintStart_toEndOf="@id/back"
+        app:layout_constraintStart_toEndOf="@id/backReg5"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -188,7 +188,7 @@
         android:layout_weight="1"
         android:background="@drawable/reg_button"
         android:fontFamily="sans-serif-medium"
-        android:text="Continue"
+        android:text="Sign Up"
         android:textColor="@color/white"
         android:textSize="16sp"
         android:layout_marginHorizontal="25dp"

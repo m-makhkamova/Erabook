@@ -162,6 +162,12 @@ class Register3Fragment : Fragment() {
         binding.reg3Cont.setOnClickListener{
             findNavController().navigate(R.id.action_register3Fragment_to_register4Fragment)
         }
+        binding.backReg3.setOnClickListener {
+            findNavController().navigate(R.id.action_register3Fragment_to_register2Fragment)
+        }
+        binding.skip.setOnClickListener {
+            findNavController().navigate(R.id.action_register3Fragment_to_register4Fragment)
+        }
         return binding.root
     }
 

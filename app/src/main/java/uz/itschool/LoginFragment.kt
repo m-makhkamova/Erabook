@@ -1,11 +1,15 @@
 package uz.itschool
 
+import android.app.AlertDialog
 import android.os.Bundle
+import android.os.Handler
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import uz.itschool.databinding.FragmentLoginBinding
+import uz.itschool.databinding.FragmentRegister5Binding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +38,16 @@ class LoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        var binding = FragmentLoginBinding.inflate(layoutInflater)
+        var binding = FragmentLoginBinding.inflate(inflater, container, false)
+
+        binding.backSignIn.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
+        }
+
+        binding.signIn.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+        }
+
         return binding.root
     }
 

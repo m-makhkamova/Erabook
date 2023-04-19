@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Register2Fragment">
     <Button
-        android:id="@+id/back"
+        android:id="@+id/backReg2"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginStart="25dp"
